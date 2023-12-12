@@ -1,0 +1,30 @@
+.active{
+    color: aqua;
+}
+
+:global(#kerwin){
+  background-color: red;
+}
+
+.film ul li {
+    list-style: none;
+}
+
+.tabbar{
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.tabbar ul {
+  display: flex;
+}
+
+.tabbar li {
+  flex: 1;
+}

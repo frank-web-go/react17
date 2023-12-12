@@ -1,0 +1,8 @@
+npx  临时安装 一次性
+nrm npm(源)仓库管理地址 nrm -g  nrm use   nrm ls   
+react中事件绑定没有绑定在具体的dom节点身上，因为绑在dom身上比较消耗内存，采用的是事件代理的方案。
+3个react中的will生命周期的共同缺点：可能被打断，导致反复执行
+componentWillUpdate 记录dom状态，在componetDidupdate中作对比（记录不准：手滚或者在render和componetDidupdate中有更新）
+shallowEqual 对比老状态和新状态，老属性和新属性
+Access-Control-Allow-Origin: *  代表支持跨域
+Redux 是js开发的一种数据管理依赖，不限于任何框架（vue,react,jquery）
