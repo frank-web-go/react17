@@ -22,27 +22,27 @@ store.subscrbe
 store.getState
 */
 
-function createFrankStore(reducer) {
-  var list = [];
-  var state = reducer(undefined,{})
-  function subscrbe(callback) {
-    list.push(callback);
-  }
-  function dispatch(action) {
-    state = reducer(state,action)
-    for (var i in list) {
-      list[i] && list[i]();
-    }
-  }
-  function getState() {
-    return state
-  }
-  return {
-    subscrbe,
-    dispatch,
-    getState,
-  };
-}
+// function createFrankStore(reducer) {
+//   var list = [];
+//   var state = reducer(undefined,{})
+//   function subscrbe(callback) {
+//     list.push(callback);
+//   }
+//   function dispatch(action) {
+//     state = reducer(state,action)
+//     for (var i in list) {
+//       list[i] && list[i]();
+//     }
+//   }
+//   function getState() {
+//     return state
+//   }
+//   return {
+//     subscrbe,
+//     dispatch,
+//     getState,
+//   };
+// }
 
 export default store;
 

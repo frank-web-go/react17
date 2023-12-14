@@ -4,6 +4,7 @@ import axios from "axios"
 function FilmList (props) {
    const [list,setlist] = useState([])
    useEffect(()=>{
+    // console.log(44444)
     if(props.type === 1) {
         // 请求卖座正在热映的数据
         axios({
